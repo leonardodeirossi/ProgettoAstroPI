@@ -10,7 +10,7 @@ blue = (0, 0, 255)
 
 def temperature():
     temp = sense.get_temperature()
-    return temp
+    print(temp)
 
 
 sense.show_message(temperature())
