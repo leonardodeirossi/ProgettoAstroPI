@@ -3,7 +3,7 @@ from sense_hat import SenseHat
 sense = SenseHat()
 
 X = [0, 0, 255]  # Blue
-O = [0, 0, 0]  # White
+O = [255, 255, 255]  # White
 
 logo_buonarroti = [
     O, O, X, O, X, O, O, O,
