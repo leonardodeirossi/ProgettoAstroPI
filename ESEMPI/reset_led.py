@@ -2,7 +2,7 @@ from sense_hat import SenseHat
 
 sense = SenseHat()
 
-O = [255, 255, 255]  # Off
+O = [0, 0, 0]  # Off
 
 reset_led = [
     O, O, O, O, O, O, O, O,
