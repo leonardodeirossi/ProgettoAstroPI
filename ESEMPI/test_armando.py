@@ -5,6 +5,8 @@ from skyfield.api import load
 """https://projects.raspberrypi.org/en/projects/code-for-your-astro-pi-mission-space-lab-experiment/4
 """
 
+# NON USARE VA IN CRASH
+
 sense = SenseHat()
 while True:
     def get_sense_data():
