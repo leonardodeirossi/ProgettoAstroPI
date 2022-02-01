@@ -1,10 +1,7 @@
-from orbit import ISS
-from skyfield.api import load
+from skyfield.api import EarthSatellite
 
-# Obtain the current time `t`
-t = load.timescale().now()
-# Compute where the ISS is at time `t`
-position = ISS.at(t)
-# Compute the coordinates of the Earth location directly beneath the ISS
-location = position.subpoint()
-print(location)
+ts = load.timescale()
+line1 = '1 25544U 98067A   14020.93268519  .00009878  00000-0  18200-3 0  5082'
+line2 = '2 25544  51.6498 109.4756 0003572  55.9686 274.8005 15.49815350868473'
+satellite = EarthSatellite(line1, line2, 'ISS (ZARYA)', ts)
+print(satellite)
