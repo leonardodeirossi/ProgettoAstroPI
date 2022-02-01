@@ -1,5 +1,5 @@
 from skyfield.api import load, wgs84
-
+ts = load.timescale()
 t = ts.utc(2014, 1, 23, 11, 18, 7)
 
 geocentric = satellite.at(t)
