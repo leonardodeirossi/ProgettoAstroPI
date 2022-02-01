@@ -6,9 +6,6 @@ line2 = '2 25544  51.6498 109.4756 0003572  55.9686 274.8005 15.49815350868473'
 satellite = EarthSatellite(line1, line2, 'ISS (ZARYA)', ts)
 print(satellite)
 
-t = ts.utc(2014, 1, 23, 11, 18, 7)
-by_name = {sat.name: sat for sat in satellites}
-satellite = by_name['ISS (ZARYA)']
 
 geocentric = satellite.at(t)
 
