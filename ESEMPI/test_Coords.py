@@ -1,4 +1,4 @@
-from skyfield.api import load, wgs84
+from skyfield.api import load, wgs84, EarthSatellite
 
 ts = load.timescale()
 line1 = '1 25544U 98067A   14020.93268519  .00009878  00000-0  18200-3 0  5082'
