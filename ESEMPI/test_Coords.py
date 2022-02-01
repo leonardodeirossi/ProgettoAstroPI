@@ -1,9 +1,11 @@
 #parte 1
 from skyfield.api import *
+import time
+attuale = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()
 
 ts = load.timescale()
-line1 = '1 25544U 98067A   14020.93268519  .00009878  00000-0  18200-3 0  5082'
-line2 = '2 25544  51.6498 109.4756 0003572  55.9686 274.8005 15.49815350868473'
+line1 = '1 25544U 98067A   22032.08513699  .00005650  00000+0  10793-3 0  9998'
+line2 = '2 25544  51.6446 290.5992 0006744  84.8658  57.9745 15.49721019324076'
 satellite = EarthSatellite(line1, line2, 'ISS (ZARYA)', ts)
 print(satellite)
 
@@ -11,7 +13,7 @@ print(satellite)
 print(satellite.epoch.utc_jpl())
 
 #parte 3
-t = ts.utc(2014, 1, 23, 11, 18, 7)
+t = ts.utc(attuale)
 
 days = t - satellite.epoch
 print('{:.3f} days away from epoch'.format(days))
