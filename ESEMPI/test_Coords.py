@@ -11,7 +11,7 @@ print(satellite)
 print(satellite.epoch.utc_jpl())
 
 #parte 3
-t = ts.utc(2022, 2, 1, 9, 15, 7)
+t = ts.utc(2014, 1, 23, 11, 18, 7)
 
 days = t - satellite.epoch
 print('{:.3f} days away from epoch'.format(days))
