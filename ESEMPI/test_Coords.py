@@ -1,7 +1,7 @@
 #parte 1
 from skyfield.api import *
 import time
-attuale = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()
+attuale = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
 
 ts = load.timescale()
 line1 = '1 25544U 98067A   22032.08513699  .00005650  00000+0  10793-3 0  9998'
