@@ -65,7 +65,7 @@ with open ('data.csv','w',newline='') as f:
   
 while True:
   data = get_sense_data()
-  dt = data[-1] - int(timestamp)
+  dt = data[-1] - int(str(timestamp))
   
   if dt.seconds > delay:
     data_writer.writerow(data)
