@@ -54,11 +54,10 @@ def get_sense_data():
   
   return sense_data
 
-
 while True:
-  with open('data.csv', 'w') as f:
+  with open('data.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f)
-    writer.writerow(str(get_sense_data()))
+    writer.writerow(get_sense_data())
 
 """
 with open ('data.csv','w',newline='') as f:
