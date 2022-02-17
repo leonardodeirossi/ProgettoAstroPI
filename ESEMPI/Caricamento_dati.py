@@ -56,7 +56,10 @@ def get_sense_data():
 
 
 while True:
-  print(get_sense_data())
+  f = open('data.csv', 'w')
+  writer = csv.writer(f)
+  writer.writerow(str(get_sense_data()))
+  f.close()
 
 """
 with open ('data.csv','w',newline='') as f:
