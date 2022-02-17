@@ -3,6 +3,7 @@ from datetime import datetime
 from csv import writer
 
 import math
+import csv
 
 sense = SenseHat()
 
@@ -53,7 +54,7 @@ def get_sense_data():
   
   return sense_data
 
-import csv
+
 
 with open ('data.csv','w',newline='') as f:
   data_writer = csv.writer(f)
@@ -68,5 +69,6 @@ while True:
   #dt = data[-1] - int(str(timestamp))
   
   #if dt.seconds > delay:
-  data_writer.writerow(data)
+  with open ('data.csv','w',newline='') as f:
+    data_writer.writerow(data)
     #timestamp = datetime.now()
