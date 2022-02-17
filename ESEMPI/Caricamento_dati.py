@@ -55,7 +55,10 @@ def get_sense_data():
   return sense_data
 
 
+while True:
+  print(get_sense_data())
 
+"""
 with open ('data.csv','w',newline='') as f:
   data_writer = csv.writer(f)
   data_writer.writerow(['temp','pres','hum',
@@ -73,3 +76,4 @@ while True:
     data_writer = csv.writer(f)
     data_writer.writerow(data)
     #timestamp = datetime.now()
+"""
