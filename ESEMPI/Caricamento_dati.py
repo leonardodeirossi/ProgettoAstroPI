@@ -1,3 +1,4 @@
+from os import times
 from sense_hat import SenseHat
 from datetime import datetime
 from csv import writer
@@ -7,8 +8,8 @@ import csv
 
 sense = SenseHat()
 
-#timestamp = datetime.now()
-#delay = 1
+timestamp = datetime.now()
+delay = 1
 
 def get_sense_data():
   sense_data = [[],[],[],[],[]]#1) datetime/2) accelerometer/
@@ -54,27 +55,25 @@ def get_sense_data():
   
   return sense_data
 
+"""
 while True:
   with open('data.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(get_sense_data())
-
 """
-with open ('data.csv','w',newline='') as f:
-  data_writer = csv.writer(f)
-  data_writer.writerow(['temp','pres','hum',
-                      'acc_x','acc_y','acc_z','acc_grav'
-                      'mag_x','mag_y','mag_z',
-                      'gyro_x', 'gyro_y', 'gyro_z',
-                      'datetime'])
-  
+
 while True:
   data = get_sense_data()
-  #dt = data[-1] - int(str(timestamp))
-  
-  #if dt.seconds > delay:
+  dt = data[-1] - timestamp
+
   with open ('data.csv','w',newline='') as f:
     data_writer = csv.writer(f)
+    data_writer.writerow(['temp','pres','hum',
+                        'acc_x','acc_y','acc_z','acc_grav'
+                        'mag_x','mag_y','mag_z',
+                        'gyro_x', 'gyro_y', 'gyro_z',
+                        'datetime'])
+
+  if dt.seconds > delay:
     data_writer.writerow(data)
-    #timestamp = datetime.now()
-"""
+    timestamp = datetime.now()
