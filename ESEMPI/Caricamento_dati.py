@@ -70,5 +70,6 @@ while True:
   
   #if dt.seconds > delay:
   with open ('data.csv','w',newline='') as f:
+    data_writer = csv.writer(f)
     data_writer.writerow(data)
     #timestamp = datetime.now()
