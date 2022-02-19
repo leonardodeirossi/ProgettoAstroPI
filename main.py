@@ -27,7 +27,7 @@ O = sfondo    # Colors constants
 
 
 # Get current timestamp (UNIX Epoch)
-current_epoch = int(time.time())
+current_epoch = int(time.time_ns())
 # last_epoch = current_epoch + 10797
 last_epoch = current_epoch + 30
 i = int(current_epoch)
@@ -312,7 +312,7 @@ with open('data.csv', 'w', newline='') as f:
                           'datetime'])
 
     # Performing calculation
-    while int(str(i)) < last_epoch:
+    while i < last_epoch:
         # Animation update
         sense.set_pixels(images[count % len(images)]())
         time.sleep(.1)
@@ -325,4 +325,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = int(time.time())         
+        i = int(time.time_ns())         
