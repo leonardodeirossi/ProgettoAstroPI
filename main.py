@@ -33,7 +33,7 @@ timestamp = time.gmtime()
 
 current_epoch = time.time()
 # last_epoch = current_epoch + 10797
-last_epoch = current_epoch + 3000.0
+last_epoch = current_epoch + 30.0
 i = current_epoch
 
 
@@ -333,7 +333,6 @@ with open('data.csv', 'w', newline='') as f:
         timestamp = datetime.now()   
 
         i = time.time()
-        print(i)
-        print(last_epoch)
 
-
+        if(i > last_epoch):
+            break
