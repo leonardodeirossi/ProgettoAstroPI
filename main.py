@@ -31,10 +31,10 @@ O = sfondo    # Colors constants
 curr_dt = datetime.now()
 timestamp = time.gmtime()
 
-current_epoch = float(calendar.timegm(time.gmtime()))
+current_epoch = time.time()
 # last_epoch = current_epoch + 10797
 last_epoch = current_epoch + 30.0
-i = round(current_epoch)
+i = current_epoch
 
 
 # Animation frames definition
@@ -332,4 +332,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = round(float(calendar.timegm(time.gmtime())))
+        i = time.time()
