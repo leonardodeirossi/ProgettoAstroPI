@@ -258,7 +258,7 @@ def get_sense_data():
     lenght1 = (pow((t1 / (2 * 3.14)), 2)) * grav
 
     # Calculating rope lenght assuming period equals 1 milisecond
-    t2 = 0,1  # time - 1 millisecond
+    t2 = 0.1  # time - 1 millisecond
     lenght2 = (pow((t2 / (2 * 3.14)), 2)) * grav
 
     sense_data[2] = lenght1          # Appending pendolum period to main array
