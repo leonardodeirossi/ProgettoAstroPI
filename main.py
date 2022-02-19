@@ -6,6 +6,7 @@ from os import times
 from sense_hat import SenseHat
 from datetime import datetime
 from csv import writer
+import calendar
 
 import math
 import csv
@@ -30,9 +31,9 @@ O = sfondo    # Colors constants
 curr_dt = datetime.now()
 timestamp = time.gmtime()
 
-current_epoch = timestamp
+current_epoch = calendar.timegm(time.gmtime())
 # last_epoch = current_epoch + 10797
-last_epoch = int(str(current_epoch)) + 30
+last_epoch = current_epoch + 30
 i = current_epoch
 
 # Animation frames definition
@@ -328,4 +329,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = time.gmtime()
+        i = calendar.timegm(time.gmtime())
