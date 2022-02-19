@@ -14,7 +14,7 @@ import time
 # Initializing SenseHat board
 sense = SenseHat()
 sense.low_light = True
-sense.set_rotation(270)
+sense.set_rotation(90)
 
 """ 8x8 LED screen animation """
 sfondo = (255, 255, 255)    # Defining colors
