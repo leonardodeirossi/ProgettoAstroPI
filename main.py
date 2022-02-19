@@ -26,6 +26,11 @@ M = filo      # Colors constants
 O = sfondo    # Colors constants
 
 
+# Get current timestamp (UNIX Epoch)
+current_epoch = int(time.time())
+last_epoch = current_epoch + 10797
+i = current_epoch
+
 # Animation frames definition
 def a():
     logo = [
@@ -306,7 +311,7 @@ with open('data.csv', 'w', newline='') as f:
                           'datetime'])
 
     # Performing calculation
-    while True:
+    while i < last_epoch:
         # Animation update
         sense.set_pixels(images[count % len(images)]())
         time.sleep(.1)
@@ -317,4 +322,6 @@ with open('data.csv', 'w', newline='') as f:
         # dt = data[-1] - timestamp
         # if dt.seconds > delay:
         data_writer.writerow(data)
-        timestamp = datetime.now()            
+        timestamp = datetime.now()   
+
+        i = int(time.time())         
