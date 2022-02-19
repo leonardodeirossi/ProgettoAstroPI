@@ -27,10 +27,10 @@ O = sfondo    # Colors constants
 
 
 # Get current timestamp (UNIX Epoch)
-current_epoch = int(time.time_ns())
+current_epoch = time.time_ns()
 # last_epoch = current_epoch + 10797
 last_epoch = current_epoch + 30
-i = int(current_epoch)
+i = current_epoch
 
 # Animation frames definition
 def a():
@@ -325,4 +325,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = int(time.time_ns())         
+        i = time.time_ns()      
