@@ -32,7 +32,7 @@ timestamp = time.gmtime()
 
 current_epoch = timestamp
 # last_epoch = current_epoch + 10797
-last_epoch = current_epoch + 30
+last_epoch = int(round(current_epoch)) + 30
 i = current_epoch
 
 # Animation frames definition
