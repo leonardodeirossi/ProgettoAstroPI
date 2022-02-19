@@ -28,7 +28,8 @@ O = sfondo    # Colors constants
 
 # Get current timestamp (UNIX Epoch)
 current_epoch = int(time.time())
-last_epoch = current_epoch + 10797
+# last_epoch = current_epoch + 10797
+last_epoch = current_epoch + 30
 i = current_epoch
 
 # Animation frames definition
