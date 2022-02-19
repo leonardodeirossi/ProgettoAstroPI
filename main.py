@@ -332,4 +332,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = float(calendar.timegm(time.gmtime()))
+        i = round(float(calendar.timegm(time.gmtime())))
