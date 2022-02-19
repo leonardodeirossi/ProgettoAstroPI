@@ -28,7 +28,7 @@ O = sfondo    # Colors constants
 
 # Get current timestamp (UNIX Epoch)
 curr_dt = datetime.now()
-timestamp = int(round(curr_dt.timestamp()))
+timestamp = time.gmtime()
 
 current_epoch = timestamp
 # last_epoch = current_epoch + 10797
@@ -328,4 +328,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = int(round(curr_dt.timestamp()))   
+        i = time.gmtime()
