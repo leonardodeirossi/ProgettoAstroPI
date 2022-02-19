@@ -34,8 +34,8 @@ timestamp = time.gmtime()
 current_epoch = float(calendar.timegm(time.gmtime()))
 # last_epoch = current_epoch + 10797
 last_epoch = current_epoch + 30.0
-i = current_epoch
-print(i)
+i = round(current_epoch)
+
 
 # Animation frames definition
 def a():
