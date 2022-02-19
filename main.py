@@ -312,7 +312,7 @@ with open('data.csv', 'w', newline='') as f:
                           'datetime'])
 
     # Performing calculation
-    while int(i) < last_epoch:
+    while int(str(i)) < last_epoch:
         # Animation update
         sense.set_pixels(images[count % len(images)]())
         time.sleep(.1)
