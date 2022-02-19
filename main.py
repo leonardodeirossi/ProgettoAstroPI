@@ -334,5 +334,6 @@ with open('data.csv', 'w', newline='') as f:
 
         i = time.time()
         print(i)
+        print(last_epoch)
 
 
