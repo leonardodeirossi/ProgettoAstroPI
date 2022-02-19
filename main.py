@@ -36,6 +36,8 @@ current_epoch = calendar.timegm(time.gmtime())
 last_epoch = current_epoch + 30
 i = current_epoch
 
+print(current_epoch)
+
 # Animation frames definition
 def a():
     logo = [
@@ -306,6 +308,8 @@ count = 0
 timestamp = datetime.now()
 delay = 1
 
+
+
 # Creating CSV file and inserting first-line header
 with open('data.csv', 'w', newline='') as f:
     data_writer = writer(f)
@@ -329,4 +333,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        print(calendar.timegm(time.gmtime()))
+        i = calendar.timegm(time.gmtime())
