@@ -27,7 +27,10 @@ O = sfondo    # Colors constants
 
 
 # Get current timestamp (UNIX Epoch)
-current_epoch = time.time_ns()
+curr_dt = datetime.now()
+timestamp = int(round(curr_dt.timestamp()))
+
+current_epoch = timestamp
 # last_epoch = current_epoch + 10797
 last_epoch = current_epoch + 30
 i = current_epoch
