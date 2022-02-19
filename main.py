@@ -333,6 +333,6 @@ with open('data.csv', 'w', newline='') as f:
         timestamp = datetime.now()   
 
         i = time.time()
+        print(i)
 
-        if(i < last_epoch):
-            break
+
