@@ -328,4 +328,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = time.time_ns()      
+        i = int(round(curr_dt.timestamp()))   
