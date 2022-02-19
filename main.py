@@ -250,16 +250,16 @@ def get_sense_data():
     # Calculating gravitational acceleration
     somma = (pow(accX, 2)) + (pow(accY, 2)) + (pow(accZ, 2)) # Calculating vector sum of x, y, z
     acc = math.sqrt(somma) # Square root for grav. acc. expressed in G
-    grav = acc * 9,81 # Converting G in m/s^2 (1G = 9.81 m/s^2)
+    grav = acc * 9.81 # Converting G in m/s^2 (1G = 9.81 m/s^2)
 
 
     # Calculating rope lenght assuming period equals 1 second
     t1 = 1  # time - 1 second
-    lenght1 = (pow((t1 / (2 * 3,14)), 2)) * grav
+    lenght1 = (pow((t1 / (2 * 3.14)), 2)) * grav
 
     # Calculating rope lenght assuming period equals 1 milisecond
-    t2 = 0,1  # time - 1 millisecond
-    lenght2 = (pow((t2 / (2 * 3,14)), 2)) * grav
+    t2 = 0.1  # time - 1 millisecond
+    lenght2 = (pow((t2 / (2 * 3.14)), 2)) * grav
 
     sense_data[2] = lenght1          # Appending pendolum period to main array
     sense_data[3] = lenght2          # Appending pendolum period to main array
