@@ -329,4 +329,4 @@ with open('data.csv', 'w', newline='') as f:
         data_writer.writerow(data)
         timestamp = datetime.now()   
 
-        i = calendar.timegm(time.gmtime())
+        print(calendar.timegm(time.gmtime()))
