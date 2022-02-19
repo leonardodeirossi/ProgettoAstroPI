@@ -21,91 +21,91 @@ e = (0, 0, 0)       # blank
 # Create a list to hold the color of each pixel in our heart images
 # Each image contains 8 rows of 8 pixels each
 red_heart = [
-     e, e, e, e, e, e, e, e,
-     e, r, r, e, r, r, e, e,
-     r, r, r, r, r, r, r, e,
-     r, r, r, r, r, r, r, e,
-     r, r, r, r, r, r, r, e,
-     e, r, r, r, r, r, e, e,
-     e, e, r, r, r, e, e, e,
-     e, e, e, r, e, e, e, e
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r,
+     r, r, r, r, r, r, r, r
      ]
 
 pink_heart = [
-     e, e, e, e, e, e, e, e,
-     e, p, p, e, p, p, e, e,
-     p, p, p, p, p, p, p, e,
-     p, p, p, p, p, p, p, e,
-     p, p, p, p, p, p, p, e,
-     e, p, p, p, p, p, e, e,
-     e, e, p, p, p, e, e, e,
-     e, e, e, p, e, e, e, e
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p,
+     p, p, p, p, p, p, p, p
      ]
 
 orange_heart = [
-     e, e, e, e, e, e, e, e,
-     e, o, o, e, o, o, e, e,
-     o, o, o, o, o, o, o, e,
-     o, o, o, o, o, o, o, e,
-     o, o, o, o, o, o, o, e,
-     e, o, o, o, o, o, e, e,
-     e, e, o, o, o, e, e, e,
-     e, e, e, o, e, e, e, e
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o,
+     o, o, o, o, o, o, o, o
      ]
 
 yellow_heart = [
-     e, e, e, e, e, e, e, e,
-     e, y, y, e, y, y, e, e,
-     y, y, y, y, y, y, y, e,
-     y, y, y, y, y, y, y, e,
-     y, y, y, y, y, y, y, e,
-     e, y, y, y, y, y, e, e,
-     e, e, y, y, y, e, e, e,
-     e, e, e, y, e, e, e, e
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y,
+     y, y, y, y, y, y, y, y
      ]
 
 green_heart = [
-     e, e, e, e, e, e, e, e,
-     e, g, g, e, g, g, e, e,
-     g, g, g, g, g, g, g, e,
-     g, g, g, g, g, g, g, e,
-     g, g, g, g, g, g, g, e,
-     e, g, g, g, g, g, e, e,
-     e, e, g, g, g, e, e, e,
-     e, e, e, g, e, e, e, e
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g,
+     g, g, g, g, g, g, g, g
      ]
 
 aqua_heart = [
-     e, e, e, e, e, e, e, e,
-     e, a, a, e, a, a, e, e,
-     a, a, a, a, a, a, a, e,
-     a, a, a, a, a, a, a, e,
-     a, a, a, a, a, a, a, e,
-     e, a, a, a, a, a, e, e,
-     e, e, a, a, a, e, e, e,
-     e, e, e, a, e, e, e, e
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a,
+     a, a, a, a, a, a, a, a
      ]
 
 blue_heart = [
-     e, e, e, e, e, e, e, e,
-     e, b, b, e, b, b, e, e,
-     b, b, b, b, b, b, b, e,
-     b, b, b, b, b, b, b, e,
-     b, b, b, b, b, b, b, e,
-     e, b, b, b, b, b, e, e,
-     e, e, b, b, b, e, e, e,
-     e, e, e, b, e, e, e, e
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b,
+     b, b, b, b, b, b, b, b
      ]
 
 purple_heart = [
-     e, e, e, e, e, e, e, e,
-     e, pr, pr, e, pr, pr, e, e,
-     pr, pr, pr, pr, pr, pr, pr, e,
-     pr, pr, pr, pr, pr, pr, pr, e,
-     pr, pr, pr, pr, pr, pr, pr, e,
-     e, pr, pr, pr, pr, pr, e, e,
-     e, e, pr, pr, pr, e, e, e,
-     e, e, e, pr, e, e, e, e
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr,
+     pr, pr, pr, pr, pr, pr, pr, pr
      ]
 
 heart_colors = [red_heart, pink_heart, orange_heart, yellow_heart,
@@ -120,4 +120,5 @@ def rainbow_hearts():
     # Clear the LED display
     sense.clear()
 
-rainbow_hearts()
+while True:
+    rainbow_hearts()
