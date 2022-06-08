@@ -235,9 +235,9 @@ def m():
 
 # Generating data from SenseHat sensor
 def get_sense_data():
-    sense_data = [[], []] # Array - contains returned data
+    sense_data = [] # Array - contains returned data
 
-    sense_data[0] = datetime.now() # Contains rilevation timestamp
+    sense_data.append(datetime.now()) # Contains rilevation timestamp
 
     
     # Collecting accelerometer data
@@ -252,9 +252,9 @@ def get_sense_data():
     accelerometer.append(accY)       # Appending y coordinate
     accelerometer.append(accZ)       # Appending z coordinate
     
-    sense_data[1] = accX    # Appending sub-array to the main one
-    sense_data[2] = accY
-    sense_data[3] = accZ
+    sense_data.append(accX)    # Appending sub-array to the main one
+    sense_data.append(accY)
+    sense_data.append(accZ)
     """
     # Calculating gravitational acceleration
     somma = (pow(accX, 2)) + (pow(accY, 2)) + (pow(accZ, 2)) # Calculating vector sum of x, y, z
